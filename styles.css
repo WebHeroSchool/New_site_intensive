@@ -20,7 +20,10 @@ body{
 }
 
 .logo{
+	position: relative;
 	padding: 40px 0;
+	padding-left: 44px;
+	font: bold 24px/32px pt_serifregular, arial, helvetica, sans-serif;
 }
 
 .menu{
@@ -36,3 +39,19 @@ body{
 	padding-right: 0;
 }
 
+.logo__circle{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 28px;
+	height: 28px;
+	background: #0056EC;
+	border-radius: 50%;
+	opacity: .7;
+}
+.logo__circle_color_blue {
+	left: 8px;
+	top: 56%;
+	background: #C8DBFB;
+}
