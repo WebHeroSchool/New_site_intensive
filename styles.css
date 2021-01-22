@@ -33,7 +33,6 @@ body{
 	text-decoration: none;
 	font: 500 18px/21px robotoregular, arial, helvetica, sans-serif;
 	transition: opacity .5s;
-
 }
 
 .menu__item:last-child {
@@ -51,7 +50,6 @@ body{
 	background: #0056EC;
 	border-radius: 50%;
 	opacity: .7;
-	border: dashed 1px red;
 }
 .logo__circle_color_blue {
 	left: 8px;

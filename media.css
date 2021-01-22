@@ -5,7 +5,6 @@
 
 	.header{
 		margin-bottom: 0px;
-		border: dashed 1px red;
 	}
 
 	.main{
@@ -13,20 +12,17 @@
 		padding: 74% 0 0;
 		background-size: 85%;
 		background-position: top center;
-		border: dashed 1px red;
 	}
 
 	.main__title{
 		margin: 18px 0 32px 0;
 		font: bold 30px/40px pt_serifregular, arial, helvetica, sans-serif;
-		border: dashed 1px red;
 	}
 
 	.main__subtitle{
 		padding: 0 35px 0 35px;
 		margin-bottom: 25px;
 		font: 500 16px/19px robotoregular, arial, helvetica, sans-serif;
-		border: dashed 1px red;
 	}
 
 	.main__button{
@@ -40,7 +36,6 @@
 	
 	.wrapped{
 		width: 87%;
-		border: dashed 1px red;
 	}
 	
 	.menu__button {
@@ -86,18 +81,27 @@
   		margin: 0;
   		list-style: none;
   		text-align: center;
-  		background-color: #ECEFF1;
-  		box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  		background-color: #FFF;
 	}
 
 	.menu__item {
   		display: block;
-  		padding: 12px 24px;
-  		color: #333;
-  		font: 500 18px/21px robotoregular, arial, helvetica, sans-serif;
+  		margin-bottom: 24px;
+  		font: 500 30px/35px robotoregular, arial, helvetica, sans-serif;
   		text-decoration: none;
+  		width: max-content;
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.menu__item:last-child{
+		margin-left: auto;
+    	margin-right: auto;
 	}
 	
+	.menu__item:nth-child(1) {
+    	margin-top: 186px;
+  	}
 	.menu__item:hover {
   		background-color: #CFD8DC;
 	}
@@ -120,4 +124,41 @@
   		visibility: visible;
   		left: 0;
 	}
+}
+
+@media (min-width: 769px){
+@media (max-width: 1920px){
+	.wrapped{
+		width: 68%;
+	}
+	.menu__item{
+		font: 500 14px/16px robotoregular, arial, helvetica, sans-serif;
+	}
+	.main {
+		padding: 17px 60% 200px 0;
+		background-size: 56%;
+	}
+	.main__title {
+		font: bold 50px/66px pt_serifregular, arial, helvetica, sans-serif;
+	}
+
+	.main__subtitle{
+		font: 500 18px/21px robotoregular, arial, helvetica, sans-serif;
+	}
+	.main__button{
+		font: 500 14px/16px robotoregular, arial, helvetica, sans-serif;
+	}
+	.header{
+		margin-bottom: 70px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.wrapped{
+		width: 90%;
+	}
+	.main {
+		background-size: 55%;
+	}
+}
 }
