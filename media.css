@@ -71,6 +71,18 @@
   		content: '';
   		top: 8px;
 	}
+
+	@keyframes menu-item_move{
+		from {
+			transform: translateX(0);
+		}
+		50%{
+			transform: translateX(3px);
+		}
+		to{
+			transform: translateX(0);
+		}
+	}
 	.menu__box{
 		display: block;
   		position: fixed;
@@ -106,7 +118,8 @@
     	margin-top: 186px;
   	}
 	.menu__item:hover {
-  		background-color: #CFD8DC;
+  		background-color: #fff;
+  		animation: menu-item_move 1s ease-in;
 	}
 
 	#menu__toggle:checked ~ .menu__button > span {
